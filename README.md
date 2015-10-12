@@ -36,7 +36,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
         btn = (Button) findViewById(R.id.btn);
         btn.setOnClickListener(this);
-        fl = new FileUploader(2,new HttpClientStack());
+        //开启两个线程上传
+        fl = new FileUploader(2);
+        //启动上传线程
         fl.start();
     }
 
