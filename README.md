@@ -7,6 +7,7 @@
 4、适用于小型文件的上传
 
 使用方式：
+```java
 package com.example.administrator.myapplication;
 
 import android.app.Activity;
@@ -73,3 +74,4 @@ public class MainActivity extends Activity implements View.OnClickListener{
         }
     }
 }
+```
