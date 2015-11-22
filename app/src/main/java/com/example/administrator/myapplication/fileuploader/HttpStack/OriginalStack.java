@@ -244,7 +244,7 @@ public class OriginalStack extends HttpStack{
             mOutputStream
                     .write(getContentDispositionBytes(paramName, fileName));
             msb.append((CONTENT_TYPE + type + NEW_LINE_STR+NEW_LINE_STR));
-            mOutputStream.write((CONTENT_TYPE + type + NEW_LINE_STR + NEW_LINE_STR).getBytes());
+            mOutputStream.write((CONTENT_TYPE + type + NEW_LINE_STR).getBytes());
             mOutputStream.write(encodingBytes);
             msb.append(rawData);
             mOutputStream.write(rawData);
